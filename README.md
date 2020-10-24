@@ -12,3 +12,10 @@
 
 - install dependencies
   `pip install -r requirements.txt`
+  
+- Set your open and closed eye threshold 
+
+    Keep your pictures of eyes open & closed at `./pictures/open.jpg` and  `./pictures/close.jpg`
+  
+- Run as:
+  `python3 main.py`
