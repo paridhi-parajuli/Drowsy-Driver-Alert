@@ -1,4 +1,4 @@
-# Drowsiness-Alert-System
+# Drowsy-Driver-Alert-System
 
 ## How to
 
