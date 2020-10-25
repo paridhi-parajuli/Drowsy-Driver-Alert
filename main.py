@@ -5,12 +5,14 @@ from playsound import playsound
 import numpy as np
 import helper as hp
 from threading import Thread
+from os import path
 
 detector = dlib.get_frontal_face_detector()
 predict = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
-# takes arguments - path for open eyed and close eyed photos
-THRES = hp.get_initial_threshold('./pictures/close.jpg', detector, predict)
+# takes arguments - path for close eyed photos
+THRES = hp.get_initial_threshold(
+    './pictures/close.jpg', detector, predict) if path.exists('./pictures/close.jpg') else 0.2
 
 MOTION_THRES = 15
 no_movement = 0
